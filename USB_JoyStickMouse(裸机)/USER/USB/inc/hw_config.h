@@ -24,7 +24,7 @@
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported define -----------------------------------------------------------*/
-#define CURSOR_STEP     10
+#define CURSOR_STEP     100
 #define DOWN            1
 #define LEFT            2
 #define RIGHT           3
