@@ -77,10 +77,10 @@ void USART_Configuration(void)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; 
   GPIO_Init(GPIOD, &GPIO_InitStructure);
 
-  USART_InitStructure.USART_BaudRate = 115200;
+  USART_InitStructure.USART_BaudRate = 38400;
   USART_InitStructure.USART_WordLength = USART_WordLength_9b;//9位数据
   USART_InitStructure.USART_StopBits = USART_StopBits_1;//1位停止位
-  USART_InitStructure.USART_Parity = USART_Parity_Even;//偶校验
+  USART_InitStructure.USART_Parity = USART_Parity_Odd;//偶校验
   USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None; //硬件流控制失能
   USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx; //发送和接受使能
   USART_Init(USART2, &USART_InitStructure); 
